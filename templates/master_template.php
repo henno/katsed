@@ -54,7 +54,7 @@
 					<li><a href="#">Minu andmed</a></li>
 					<li><a href="#">Logi välja</a></li>
 				<?else:?>
-					<li><a href="#">Registreeri</a></li>
+					<li><a href="<?=BASE_URL?>register">Registreeri</a></li>
 					<li><a href="#">Logi sisse</a></li>
 				<?endif?>
 			</ul>
