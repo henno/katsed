@@ -50,12 +50,13 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-					<li id="nav-register-btn" class="">
-						<a href="#">Register</a>
-					</li>
-					<li id="nav-login-btn" class="">
-						<a href="#">Login</a>
-					</li>
+				<? if ($auth->logged_in): ?>
+					<li><a href="#">Minu andmed</a></li>
+					<li><a href="#">Logi välja</a></li>
+				<?else:?>
+					<li><a href="#">Registreeri</a></li>
+					<li><a href="#">Logi sisse</a></li>
+				<?endif?>
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>
